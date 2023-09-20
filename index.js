@@ -1,14 +1,16 @@
 const { exec } = require("child_process");
 
-exec("sh list-containers.sh", (error, stdout, stderr) => {
+const scriptDirName = require('path').dirname(require.main.filename); 
+
+exec(`sh ${scriptDirName}/list-containers.sh`, (error, stdout, stderr) => {
     if (error) {
-        console.log(`error: ${error.message}`);
+        console.log(`${error.message}`);
         return;
     }
     if (stderr) {
-        console.log(`stderr: ${stderr}`);
+        console.log(`${stderr}`);
         return;
     }
-    console.log(`stdout: ${stdout}`);
+    console.log(`${stdout}`);
 });
 
