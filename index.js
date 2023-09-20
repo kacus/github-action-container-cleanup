@@ -1,7 +1,7 @@
 const { exec } = require("child_process");
 
 const scriptDirName = require('path').dirname(require.main.filename); 
-const execCmd = `sh ${scriptDirName}/list-containers.sh`;
+const execCmd = `bash ${scriptDirName}/list-containers.sh`;
 
 console.log(execCmd);
 
