@@ -1,8 +1,11 @@
 const { exec } = require("child_process");
 
 const scriptDirName = require('path').dirname(require.main.filename); 
+const execCmd = `sh ${scriptDirName}/list-containers.sh`;
 
-exec(`sh ${scriptDirName}/list-containers.sh`, (error, stdout, stderr) => {
+console.log(execCmd);
+
+exec(execCmd, (error, stdout, stderr) => {
     if (error) {
         console.log(`${error.message}`);
         return;
