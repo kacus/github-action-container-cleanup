@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 docker ps -q | sort > /tmp/post-containers-list.txt
 containers_to_kill=$(comm -23 /tmp/post-containers-list.txt /tmp/pre-containers-list.txt)
 
@@ -7,3 +9,5 @@ else
   echo cleaning up after killing containers
   docker system prune --volumes --force
 fi
+
+rm -f /tmp/post-containres-list.txt /tmp/pre-containers-list.txt
