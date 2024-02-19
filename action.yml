@@ -1,5 +1,7 @@
-name: "Hello World"
-description: "Greet someone and record the time"
+name: "Cleanup Docker Containers"
+description: "Github Action to cleanup containers created by the lifetime of a workflow Job"
+icon: "trash-2"
+color: "red"
 runs:
   using: "node20"
   main: "index.js"
