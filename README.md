@@ -49,7 +49,7 @@ jobs:
   test-container-cleanup:
     runs-on: self-hosted
     steps:
-      - uses: waycarbon/github-action-container-cleanup@v1
+      - uses: kacus/github-action-container-cleanup@v1.0.0
       - name: launch nginx container
         run: docker run -d nginx
       - name: launch mysql container
