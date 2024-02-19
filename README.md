@@ -1,4 +1,12 @@
+# Fork of [github-action-container-cleanup](https://github.com/waycarbon/github-action-container-cleanup)
+
+**This fork updates action to run in Node20**
+[More here](https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/)
+
+# Original README below
+
 # github-action-container-cleanup
+
 Github Action to cleanup containers created by the lifetime of a workflow Job
 
 ## Motivation
