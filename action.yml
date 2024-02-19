@@ -1,7 +1,8 @@
-name: "Cleanup Docker Containers"
+name: "Cleanup Docker Containers created by Github Action"
 description: "Github Action to cleanup containers created by the lifetime of a workflow Job"
-icon: "trash-2"
-color: "red"
+branding:
+  icon: "trash-2"
+  color: "red"
 runs:
   using: "node20"
   main: "index.js"
